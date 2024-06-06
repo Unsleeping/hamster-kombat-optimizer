@@ -1,0 +1,30 @@
+{
+  "name": "hamster-combat-optimizer",
+  "version": "1.0.0",
+  "description": "The Hamster Combat Optimizer is a specialized tool designed for the clicker game 'Hamster Combat.' This calculator helps players identify the most profitable upgrade available by calculating the value of each upgrade based on its efficiency. The efficiency is determined by the ratio of extra profit per hour (X coins) to the cost of the upgrade (Y coins). By inputting the values of X and Y for each potential upgrade, the HPO provides a clear ranking of upgrades, highlighting the most cost-effective options to maximize your hamster's combat prowess and in-game earnings.",
+  "main": "main.js",
+  "scripts": {
+    "compile": "tsc --outDir ./js main.ts",
+    "run": "node ./js/main.js",
+    "start": "npm run compile && npm run run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Unsleeping/hamster-combat-optimizer.git"
+  },
+  "keywords": [
+    "optimizer",
+    "clicker",
+    "game",
+    "hamster",
+    "combat",
+    "hamster combat optimizer",
+    "hamster combat calculator"
+  ],
+  "author": "unsleeping",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Unsleeping/hamster-combat-optimizer/issues"
+  },
+  "homepage": "https://github.com/Unsleeping/hamster-combat-optimizer#readme"
+}
