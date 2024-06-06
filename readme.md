@@ -77,3 +77,14 @@ _How many hours you will wait to return spent money_: 1 / 0.05 per hour = 20 hou
   },
 ];
 ```
+
+## Supporting the Project
+
+If you find this project useful and would like to support its development, you can buy me a coffee or a donut! Your support is greatly appreciated.
+
+Way to support me:
+
+1. use my [referral](https://t.me/hamster_Kombat_bot/start?startapp=kentId370558684) link in Hamster Combat
+2. [buy me a coffee](https://pay.cloudtips.ru/p/24f584df)
+3. [join my frontend tg channel](https://t.me/unsleeping706) and/or [boost](https://t.me/unsleeping706?boost) it
+4. download [arc](https://arc.net/gift/ff151d58) browser by my referral link
