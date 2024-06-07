@@ -33,13 +33,20 @@ const getUpgradeValuesByType = (type: CardItem["type"]) => {
   }
 };
 
-const mergeListWithUpgradeValues = (type: CardItem["type"]) => {
+const mergeListWithUpgradeValues = (
+  type: CardItem["type"],
+  withoutSecondList = false
+) => {
   const list = getListByType(type);
   const upgradeValues = getUpgradeValuesByType(type);
   if (list.length !== upgradeValues.length) {
     throw new Error(
       `list.length: ${list.length}, fastUpdateValues.length: ${upgradeValues.length}`
     );
+  }
+
+  if (withoutSecondList) {
+    return list;
   }
 
   const updatedList = list.map((item, index) => {
@@ -56,7 +63,7 @@ const allTypes = ["Markets", "PR&Team", "Legal", "Special"] as const;
 
 const getAllCards = () =>
   allTypes.reduce((prev, cur) => {
-    const updatedList = mergeListWithUpgradeValues(cur);
+    const updatedList = mergeListWithUpgradeValues(cur, true);
     prev.push(...updatedList);
     return prev;
   }, [] as CardItem[]);
